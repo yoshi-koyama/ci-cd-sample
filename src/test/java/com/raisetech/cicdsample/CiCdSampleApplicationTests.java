@@ -19,7 +19,7 @@ class CiCdSampleApplicationTests {
 
 	@Test
 	void helloエンドポイントにアクセスすると200ステータスがhelloという文字列が返されること() throws Exception {
-		mockMvc.perform(get("/hello")).andExpect(status().isOk()).andExpect(content().string("hay"));
+		mockMvc.perform(get("/hello")).andExpect(status().isOk()).andExpect(content().string("hello"));
 	}
 
 }
